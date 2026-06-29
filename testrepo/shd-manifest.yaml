@@ -1,1 +1,5 @@
-{}
+'@domain:guldmund.dk':
+    - pi/caddy/data/tls/tls_guldmund_dk.caddy
+paperless:
+    - pi/caddy/data/sites/paperless.caddy
+    - pi/pihole/data/dnsmasq.d/generated/paperless.conf

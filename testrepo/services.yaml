@@ -1,8 +1,12 @@
 hosts:
     pi:
         ip: 10.0.5.50
-domains: {}
+domains:
+    guldmund.dk: {}
 defaults:
-    dns_host: ""
+    dns_host: pi
 services:
-    domain: {}
+    paperless:
+        fqdn: docs.guldmund.dk
+        host: pi
+        backend: paperless:8080
